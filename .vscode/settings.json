@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/data/unreal_projects/MinimumCode/.vscode": true,
+		"/data/unreal_projects/MinimumCode/Content": true,
+		"/data/unreal_projects/MinimumCode/Intermediate": true
+	}
+}

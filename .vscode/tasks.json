@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "MinimumCode Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Mac",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"IOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"HTML5",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"Linux",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Shipping",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCode TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCode TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCode",
+				"TVOS",
+				"Test",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Linux",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Debug",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"DebugGame",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MinimumCodeEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		},
+		{
+			"label": "MinimumCodeEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MinimumCodeEditor",
+				"Mac",
+				"Development",
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/curt/UnrealEngine_4.22"
+			}
+		}
+	]
+}

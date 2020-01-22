@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "MinimumCode (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCode Linux Debug Build",
+			"program": "/data/unreal_projects/MinimumCode/Binaries/Linux/MinimumCode-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCode (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCode Linux DebugGame Build",
+			"program": "/data/unreal_projects/MinimumCode/Binaries/Linux/MinimumCode-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCode (Development)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCode Linux Development Build",
+			"program": "/data/unreal_projects/MinimumCode/Binaries/Linux/MinimumCode",
+			"args": [
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCode (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCode Linux Shipping Build",
+			"program": "/data/unreal_projects/MinimumCode/Binaries/Linux/MinimumCode-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCode (Test)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCode Linux Test Build",
+			"program": "/data/unreal_projects/MinimumCode/Binaries/Linux/MinimumCode-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCodeEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCodeEditor Linux Debug Build",
+			"program": "/home/curt/UnrealEngine_4.22/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject"
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCodeEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCodeEditor Linux DebugGame Build",
+			"program": "/home/curt/UnrealEngine_4.22/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject"
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "MinimumCodeEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "MinimumCodeEditor Linux Development Build",
+			"program": "/home/curt/UnrealEngine_4.22/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/data/unreal_projects/MinimumCode/MinimumCode.uproject"
+			],
+			"cwd": "/home/curt/UnrealEngine_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/curt/UnrealEngine_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/data/unreal_projects/MinimumCode/MinimumCode.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/curt/UnrealEngine_4.22"
+		}
+	]
+}

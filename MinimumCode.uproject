@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{00044064-08D7-8ABC-2FC6-1FBEA0E49D56}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MinimumCode",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"TargetPlatforms": [
+		"LinuxNoEditor"
+	]
+}
